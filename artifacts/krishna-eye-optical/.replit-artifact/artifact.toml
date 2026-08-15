@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Krishna Eye Optical"
+description = "A premium, responsive local business website for Krishna Eye Optical in Yelahanka, Bengaluru, helping customers discover eyewear, enquire through WhatsApp, call the store, and get directions."
+version = "1.0.0"
+id = "artifacts/krishna-eye-optical"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19602
+
+[services.development]
+run = "pnpm --filter @workspace/krishna-eye-optical run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/krishna-eye-optical", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/krishna-eye-optical/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19602"
+BASE_PATH = "/"

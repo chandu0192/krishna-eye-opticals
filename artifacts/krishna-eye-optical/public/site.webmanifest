@@ -1,0 +1,17 @@
+{
+  "name": "Krishna Eye Optical",
+  "short_name": "Krishna Eye Optical",
+  "description": "Optical retail and eyewear in Yelahanka, Bengaluru.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f3eb",
+  "theme_color": "#1b2b45",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

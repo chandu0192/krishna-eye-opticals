@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: [PRODUCTION_DOMAIN]/sitemap.xml

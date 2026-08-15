@@ -1,0 +1,1356 @@
+# KRISHNA EYE OPTICAL — PRODUCTION WEBSITE
+
+## YOUR ROLE
+
+Act as a senior product designer, senior frontend engineer, UI/UX specialist, local SEO expert, accessibility engineer, performance engineer and conversion-rate optimization specialist.
+
+You are building a REAL CLIENT WEBSITE, not a demo, template or college project.
+
+The final result must look like a professional web agency designed and developed it for a paying local business.
+
+Do not produce a generic AI-looking website.
+
+Do not stop after creating a basic landing page.
+
+Do not just explain what should be built.
+
+YOU MUST ACTUALLY BUILD, RUN, TEST, DEBUG AND POLISH THE WEBSITE IN THIS REPLIT PROJECT.
+
+---
+
+# CLIENT
+
+Business:
+
+Krishna Eye Optical
+
+Business Type:
+
+Optical Store / Eyewear Store
+
+Location:
+
+Yelahanka, Bangalore, Karnataka, India
+
+Official business/share source:
+
+https://share.google/aC4ROlhydUBestwTj
+
+Known address:
+
+38/6, 36/7, KHB, Near Vishal Mart,
+Industrial Area, Yelahanka,
+Bengaluru, Karnataka - 560064, India
+
+Use the provided Google business/share source as the primary source for business information.
+
+---
+
+# ABSOLUTE DATA ACCURACY RULE
+
+Before writing the website content:
+
+1. Inspect the provided business/share URL if accessible.
+2. Extract all useful verified business information.
+3. Use only information that can actually be verified.
+4. Never invent:
+
+   * phone number
+   * WhatsApp number
+   * Instagram account
+   * Facebook page
+   * email
+   * opening hours
+   * reviews
+   * ratings
+   * services
+   * brands
+   * pricing
+   * certifications
+   * medical claims
+   * statistics
+
+If a required value cannot be verified, use a clearly identifiable placeholder:
+
+[ADD PHONE NUMBER]
+
+[ADD WHATSAPP NUMBER]
+
+[ADD INSTAGRAM URL]
+
+[ADD FACEBOOK URL]
+
+[ADD EMAIL]
+
+[ADD BUSINESS HOURS]
+
+Do NOT silently replace missing information with fake data.
+
+---
+
+# IMPORTANT BUSINESS POSITIONING
+
+This is an optical retail business.
+
+Do NOT portray it as:
+
+* an eye hospital
+* an ophthalmology clinic
+* a medical diagnostic center
+* an eye surgery center
+
+Do not make medical claims.
+
+The website should communicate:
+
+* trust
+* professionalism
+* eyewear expertise
+* quality
+* convenience
+* personal assistance
+* local Yelahanka presence
+* easy communication
+* easy store navigation
+
+---
+
+# DESIGN GOAL
+
+Create a premium, modern, elegant optical-store website.
+
+Visual direction:
+
+* premium
+* minimal
+* clean
+* sophisticated
+* trustworthy
+* spacious
+* editorial
+* modern
+* conversion-focused
+
+The website should feel expensive without being flashy.
+
+Think:
+
+"Premium local optical boutique"
+
+NOT:
+
+"Generic AI landing page"
+
+NOT:
+
+"Bootstrap template"
+
+NOT:
+
+"College project"
+
+NOT:
+
+"Copy of Lenskart"
+
+---
+
+# VISUAL SYSTEM
+
+Use a refined visual system.
+
+Recommended palette:
+
+Primary:
+Deep navy / midnight blue
+
+Secondary:
+White / off-white
+
+Accent:
+Professional cyan / teal / sky blue
+
+Neutrals:
+Soft gray / slate
+
+Use colors consistently through CSS variables/design tokens.
+
+Avoid:
+
+* excessive gradients
+* neon colors
+* excessive glassmorphism
+* huge rounded cards
+* excessive shadows
+* random colors
+* low-contrast text
+
+Use:
+
+* subtle borders
+* controlled shadows
+* generous whitespace
+* strong typography
+* clear hierarchy
+* elegant hover states
+
+---
+
+# TYPOGRAPHY
+
+Use a premium modern font.
+
+Prefer a clean font such as:
+
+Inter
+Manrope
+DM Sans
+Plus Jakarta Sans
+
+Use a consistent typography scale.
+
+Headings should be bold and elegant.
+
+Body text should be highly readable.
+
+Do not use too many font families.
+
+---
+
+# TECH STACK
+
+First inspect the existing Replit project.
+
+If an existing framework exists, use it rather than unnecessarily rebuilding the project.
+
+Preferred stack if starting from scratch:
+
+React
+Vite
+TypeScript
+Tailwind CSS
+
+Use reusable components.
+
+Use Lucide icons or another lightweight professional icon library if needed.
+
+Do not install unnecessary libraries.
+
+---
+
+# PROJECT ARCHITECTURE
+
+Create a clean structure similar to:
+
+src/
+components/
+Navbar
+Hero
+TrustBar
+About
+ProductCategories
+Services
+WhyChooseUs
+Reviews
+Gallery
+Location
+Contact
+WhatsAppCTA
+Footer
+
+data/
+business.ts
+
+lib/
+whatsapp.ts
+maps.ts
+
+App.tsx
+main.tsx
+index.css
+
+public/
+images/
+favicon
+robots.txt
+sitemap.xml
+site.webmanifest
+
+Adjust this structure if the existing project uses a better architecture.
+
+---
+
+# BUSINESS DATA CENTRALIZATION
+
+Do NOT scatter phone numbers, WhatsApp numbers, URLs and business details throughout components.
+
+Create one central business configuration/data object.
+
+Example:
+
+business = {
+name,
+address,
+phone,
+whatsapp,
+instagram,
+facebook,
+email,
+hours,
+mapsUrl,
+website
+}
+
+Use this data everywhere.
+
+This makes future client edits extremely easy.
+
+---
+
+# PAGE STRUCTURE
+
+Build a complete single-page business website with:
+
+1. Announcement / trust strip if appropriate
+2. Sticky Navbar
+3. Hero
+4. Trust indicators
+5. About
+6. Products / categories
+7. Services
+8. Why Choose Us
+9. Reviews
+10. Gallery
+11. Location + Google Maps
+12. Contact / enquiry
+13. WhatsApp CTA
+14. Footer
+
+Every section must have a purpose.
+
+Do not add sections merely to make the page longer.
+
+---
+
+# NAVBAR
+
+Create a premium sticky navbar.
+
+Desktop:
+
+Left:
+Elegant text logo / business identity
+
+Center or right:
+
+Home
+About
+Products
+Services
+Reviews
+Contact
+
+Right:
+
+Call
+WhatsApp
+
+Behavior:
+
+* sticky
+* smooth transition on scroll
+* subtle background blur only if it improves readability
+* subtle shadow/border after scrolling
+* never obstruct content
+
+Mobile:
+
+Use a polished hamburger menu.
+
+Menu must:
+
+* animate smoothly
+* be keyboard accessible
+* close after navigation
+* prevent accidental background interaction
+* work perfectly at 320px width
+
+---
+
+# HERO SECTION
+
+Create the strongest visual section of the website.
+
+Use a premium eyewear/optical visual.
+
+If actual business images are available, prioritize them.
+
+If not, use high-quality relevant imagery and clearly keep it as generic eyewear imagery.
+
+Never pretend a stock image is the actual store.
+
+Hero copy should be concise.
+
+Possible direction:
+
+"See Better. Look Better. Choose Better."
+
+Create a better version if appropriate.
+
+Supporting copy should naturally mention:
+
+Krishna Eye Optical
+Yelahanka
+eyewear / optical services
+
+Primary CTA:
+
+Get Directions
+
+Secondary CTA:
+
+WhatsApp Us
+
+Optional CTA:
+
+Call Now
+
+The CTA hierarchy should be visually clear.
+
+---
+
+# TRUST INDICATORS
+
+Create 3–4 elegant trust/value indicators.
+
+Examples only if supported:
+
+Quality Eyewear
+Personalized Assistance
+Wide Frame Selection
+Convenient Yelahanka Location
+
+Do not invent statistics.
+
+Do not use fake badges like:
+
+"10,000+ Happy Customers"
+
+unless verified.
+
+---
+
+# ABOUT
+
+Create a premium but concise About section.
+
+Explain:
+
+* who Krishna Eye Optical is
+* local Yelahanka presence
+* what customers can find there
+* customer-focused assistance
+
+Use real information only.
+
+Avoid generic AI copy.
+
+Do not write meaningless paragraphs.
+
+---
+
+# PRODUCTS
+
+Create an attractive product/category grid.
+
+Only show categories supported by verified business information.
+
+Potential categories:
+
+Eyeglasses
+Spectacle Frames
+Prescription Lenses
+Contact Lenses
+Sunglasses
+Kids Eyewear
+
+Each card should contain:
+
+* relevant image
+* category
+* concise description
+* enquiry CTA
+
+CTA:
+
+"Ask on WhatsApp"
+
+Do not invent brands or prices.
+
+---
+
+# SERVICES
+
+Display only verified services.
+
+Possible examples:
+
+* Eyewear selection assistance
+* Frame selection
+* Lens selection
+* Prescription eyewear
+* Contact lens assistance
+
+Do not claim eye examinations or medical treatment unless explicitly verified.
+
+---
+
+# WHY CHOOSE US
+
+Make this section visually interesting.
+
+Focus on actual customer benefits.
+
+Possible themes:
+
+Local & Convenient
+Personal Assistance
+Quality Eyewear
+Style + Comfort
+Easy Enquiry
+
+Avoid generic marketing fluff.
+
+---
+
+# REVIEWS
+
+This section must follow strict authenticity rules.
+
+If genuine reviews are available from the provided source:
+
+Display selected real reviews.
+
+If reviews are NOT available:
+
+DO NOT CREATE FAKE REVIEWS.
+
+Instead create:
+
+"See What Customers Are Saying"
+
+with a button linking to the verified Google business listing.
+
+Never fabricate:
+
+* names
+* ratings
+* review text
+* customer numbers
+
+---
+
+# GALLERY
+
+Create a premium gallery.
+
+If real business/store images are available:
+
+Use them.
+
+If not:
+
+Use tasteful optical-related imagery without implying that it represents the actual store.
+
+Requirements:
+
+* responsive grid
+* lazy loading
+* optimized images
+* proper alt text
+* accessible lightbox
+* keyboard controls
+* escape-to-close
+* focus management
+
+Do not use generic filenames.
+
+Use descriptive filenames such as:
+
+krishna-eye-optical-yelahanka-store.webp
+
+eyewear-frames-yelahanka.webp
+
+---
+
+# GOOGLE MAPS
+
+Create a professional location section.
+
+Display the complete verified address:
+
+38/6, 36/7, KHB, Near Vishal Mart,
+Industrial Area, Yelahanka,
+Bengaluru, Karnataka - 560064
+
+Include:
+
+* map
+* address
+* Get Directions button
+* Copy Address button if useful
+
+Do not use fake coordinates.
+
+Prefer a Google Maps URL generated from the verified business/address.
+
+If an iframe can be used without exposing a private API key, use it.
+
+If an API key would be required, do NOT create a fake key.
+
+Use a clean map link/card instead.
+
+---
+
+# DIRECTIONS
+
+The "Get Directions" CTA should open Google Maps using the exact business location.
+
+Prefer:
+
+https://www.google.com/maps/search/?api=1&query=...
+
+Properly URL encode the address/business name.
+
+---
+
+# WHATSAPP — HIGH PRIORITY
+
+WhatsApp is one of the primary conversion actions.
+
+Create WhatsApp CTAs in:
+
+* hero
+* product section
+* contact section
+* floating mobile CTA
+* footer
+
+Use:
+
+https://wa.me/91XXXXXXXXXX?text=ENCODED_MESSAGE
+
+Only use the VERIFIED WhatsApp number.
+
+If unavailable:
+
+[ADD WHATSAPP NUMBER]
+
+Do not invent one.
+
+Create a reusable WhatsApp utility.
+
+The pre-filled message should be professional and useful.
+
+Example:
+
+"Hello Krishna Eye Optical, I would like to enquire about your eyewear collection. Could you please share more details?"
+
+URL encode the message correctly.
+
+---
+
+# PHONE
+
+Create clickable:
+
+tel:+91XXXXXXXXXX
+
+Use the verified number only.
+
+If unavailable:
+
+[ADD PHONE NUMBER]
+
+---
+
+# SOCIAL MEDIA
+
+Add:
+
+Instagram
+Facebook
+
+Only use verified URLs.
+
+If unavailable, use placeholders.
+
+External links must use:
+
+target="_blank"
+rel="noopener noreferrer"
+
+Do not invent social profiles.
+
+---
+
+# CONTACT FORM
+
+Build a polished contact/enquiry form.
+
+Fields:
+
+Name *
+Phone *
+Email
+Interested In
+Message *
+
+Interested In options:
+
+Eyeglasses
+Frames
+Lenses
+Contact Lenses
+Sunglasses
+Other
+
+Requirements:
+
+* proper labels
+* accessible inputs
+* validation
+* phone validation
+* email validation
+* required fields
+* useful error messages
+* loading state
+* success state
+* prevent duplicate submissions
+* keyboard accessible
+* mobile optimized
+
+IMPORTANT:
+
+Do not fake backend submission.
+
+If the Replit project supports a backend easily, create a minimal secure backend endpoint.
+
+If no backend is appropriate:
+
+Implement frontend validation and provide a WhatsApp fallback.
+
+Never tell the user "message sent successfully" when nothing was actually sent.
+
+---
+
+# FLOATING MOBILE ACTION BAR
+
+On mobile create a compact bottom action bar containing:
+
+WhatsApp
+Call
+Directions
+
+It must:
+
+* remain accessible
+* not cover important content
+* respect safe-area insets
+* disappear or adapt where inappropriate
+* look premium
+
+---
+
+# FOOTER
+
+Include:
+
+Krishna Eye Optical
+
+Short genuine business description.
+
+Quick Links:
+
+Home
+About
+Products
+Services
+Reviews
+Contact
+
+Contact:
+
+Address
+Phone
+WhatsApp
+
+Social:
+
+Instagram
+Facebook
+
+Directions
+
+Copyright:
+
+© 2026 Krishna Eye Optical. All Rights Reserved.
+
+Do not add fake developer credits.
+
+---
+
+# SEO
+
+Implement serious local SEO.
+
+Required:
+
+* semantic HTML
+* one clear H1
+* logical H2/H3 hierarchy
+* unique title
+* meta description
+* canonical URL
+* viewport
+* theme-color
+* robots meta
+* Open Graph
+* Twitter cards
+* favicon
+* manifest
+* JSON-LD
+
+Title:
+
+Krishna Eye Optical | Optical Store in Yelahanka, Bangalore
+
+Create a natural high-converting meta description.
+
+Do NOT keyword stuff.
+
+---
+
+# LOCAL SEO KEYWORDS
+
+Naturally target relevant searches such as:
+
+Krishna Eye Optical Yelahanka
+Optical Store in Yelahanka
+Optician in Yelahanka
+Optical Shop Yelahanka
+Eyewear Store Yelahanka
+Optical Shop Bangalore
+Eyeglasses Yelahanka
+
+Do not stuff these keywords into every section.
+
+---
+
+# STRUCTURED DATA
+
+Implement JSON-LD.
+
+Use the most appropriate Schema.org business type.
+
+Potentially:
+
+OpticalStore
+
+or another appropriate LocalBusiness subtype if necessary.
+
+Include ONLY verified properties.
+
+Potential fields:
+
+name
+address
+telephone
+url
+image
+sameAs
+geo
+openingHoursSpecification
+priceRange
+
+Do not invent missing properties.
+
+Validate JSON-LD syntax.
+
+---
+
+# SEO FILES
+
+Create:
+
+public/robots.txt
+
+public/sitemap.xml
+
+public/site.webmanifest
+
+favicon assets
+
+If the framework supports dynamic sitemap/robots generation, implement it properly.
+
+Use:
+
+[PRODUCTION_DOMAIN]
+
+until the actual production URL is known.
+
+Do not invent a production domain.
+
+---
+
+# OPEN GRAPH
+
+Implement:
+
+og:title
+og:description
+og:type
+og:url
+og:image
+og:site_name
+
+Twitter:
+
+twitter:card
+twitter:title
+twitter:description
+twitter:image
+
+Create a professional OG image if practical.
+
+---
+
+# PERFORMANCE
+
+Optimize aggressively without destroying UX.
+
+Requirements:
+
+* lazy load below-fold images
+* modern image formats
+* responsive images
+* avoid massive images
+* avoid unnecessary JavaScript
+* minimize dependencies
+* avoid render-blocking resources
+* optimize fonts
+* prevent layout shifts
+* code split where useful
+* clean CSS
+* no unnecessary animations
+
+Target:
+
+Lighthouse Performance: 90+
+Accessibility: 95+
+Best Practices: 95+
+SEO: 95+
+
+These are targets, not excuses to compromise design.
+
+---
+
+# ACCESSIBILITY
+
+Follow WCAG principles.
+
+Implement:
+
+* semantic HTML
+* keyboard navigation
+* visible focus states
+* accessible labels
+* good contrast
+* meaningful alt text
+* accessible buttons
+* accessible navigation
+* accessible forms
+* appropriate ARIA only where required
+* reduced motion support
+
+Include:
+
+@media (prefers-reduced-motion: reduce)
+
+---
+
+# RESPONSIVE DESIGN
+
+This is NON-NEGOTIABLE.
+
+Design and test for:
+
+320px
+360px
+375px
+390px
+412px
+430px
+768px
+820px
+1024px
+1280px
+1440px
+1920px
+
+Check:
+
+* no horizontal scroll
+* no overflow
+* no broken grids
+* no clipped text
+* no overlapping buttons
+* no tiny typography
+* no giant whitespace gaps
+* no broken navbar
+* no broken images
+* no inaccessible mobile menu
+
+Mobile is NOT a scaled-down desktop design.
+
+Design mobile intentionally.
+
+---
+
+# MICRO-INTERACTIONS
+
+Use subtle premium interactions:
+
+* navbar transition
+* button hover
+* card hover
+* image reveal
+* section reveal
+* smooth scrolling
+* subtle focus states
+
+Use CSS animations where possible.
+
+Avoid:
+
+* particle backgrounds
+* excessive parallax
+* spinning elements
+* flashy gradients
+* excessive glassmorphism
+* annoying loaders
+* animation everywhere
+
+Respect reduced-motion preferences.
+
+---
+
+# CONTENT QUALITY
+
+Write copy like a professional local business website.
+
+Avoid AI clichés such as:
+
+"We are passionate about excellence."
+
+"Your satisfaction is our priority."
+
+"We strive to provide unparalleled service."
+
+Replace them with specific customer-focused copy.
+
+Keep text concise.
+
+Every sentence should help the customer understand:
+
+WHAT the store offers
+WHERE it is
+WHY they should consider it
+HOW to contact it
+HOW to reach it
+
+---
+
+# CONVERSION STRATEGY
+
+Primary conversions:
+
+1. WhatsApp enquiry
+2. Phone call
+3. Get Directions
+4. Contact form
+
+Use clear CTA hierarchy.
+
+Do not put a CTA on every line.
+
+Do not spam users with popups.
+
+Make the next action obvious.
+
+---
+
+# VISUAL QUALITY CHECK
+
+Before finalizing, inspect the website as if you are the CLIENT.
+
+Ask:
+
+Does this look professionally designed?
+
+Does it look expensive?
+
+Does it look trustworthy?
+
+Does it look like a real optical business?
+
+Does the hero immediately communicate the business?
+
+Are CTAs obvious?
+
+Does mobile look intentionally designed?
+
+Does anything look AI-generated?
+
+Does anything look like a template?
+
+If YES to any negative answer, redesign that part.
+
+---
+
+# CODE QUALITY
+
+Before finishing:
+
+* remove unused imports
+* remove dead code
+* remove console errors
+* remove unnecessary dependencies
+* fix broken links
+* fix broken images
+* fix accessibility warnings
+* fix TypeScript errors
+* fix build errors
+* ensure production build succeeds
+
+No lorem ipsum.
+
+No fake functionality.
+
+No fake testimonials.
+
+No fake business data.
+
+No unnecessary comments.
+
+Keep code maintainable.
+
+---
+
+# TESTING REQUIREMENT
+
+After implementation:
+
+1. Run the application.
+2. Open the website.
+3. Test every navigation link.
+4. Test mobile menu.
+5. Test WhatsApp buttons.
+6. Test phone button.
+7. Test Google Maps button.
+8. Test contact form validation.
+9. Test form success/error behavior.
+10. Check browser console.
+11. Check responsive layouts.
+12. Check images.
+13. Check SEO metadata.
+14. Check structured data syntax.
+15. Run production build.
+16. Fix every issue you find.
+
+Do not tell me something works unless you actually test it.
+
+---
+
+# IMPORTANT REPLIT AGENT BEHAVIOR
+
+Do not stop at analysis.
+
+Do not only give me instructions.
+
+Do not ask me to manually create files unless absolutely necessary.
+
+Use the Replit workspace directly.
+
+Create and modify the files yourself.
+
+Install only necessary dependencies.
+
+Run the project.
+
+Inspect the result.
+
+Fix errors.
+
+Iterate.
+
+Continue until the website is genuinely production-ready.
+
+If information is missing, use clearly marked placeholders rather than guessing.
+
+---
+
+# IMPLEMENTATION ORDER
+
+Follow this sequence:
+
+PHASE 1 — Inspect
+
+Inspect existing files, package.json, framework and current structure.
+
+PHASE 2 — Research
+
+Inspect the provided business source and extract verified business information.
+
+PHASE 3 — Architecture
+
+Plan the component structure, data model, design system and responsive behavior.
+
+PHASE 4 — Build
+
+Implement the complete website.
+
+PHASE 5 — SEO
+
+Implement metadata, JSON-LD, robots, sitemap, manifest and Open Graph.
+
+PHASE 6 — Conversion
+
+Implement WhatsApp, Call, Directions and Contact Form flows.
+
+PHASE 7 — Responsive
+
+Test all major breakpoints.
+
+PHASE 8 — Accessibility
+
+Fix accessibility issues.
+
+PHASE 9 — Performance
+
+Optimize images, JavaScript, CSS and loading behavior.
+
+PHASE 10 — QA
+
+Run the application, production build and final checks.
+
+PHASE 11 — POLISH
+
+Fix anything that looks generic, unfinished or amateur.
+
+---
+
+# FINAL ACCEPTANCE CRITERIA
+
+Do not consider the task complete until:
+
+[ ] Website runs successfully
+
+[ ] Production build succeeds
+
+[ ] No console errors
+
+[ ] No TypeScript/build errors
+
+[ ] Fully responsive
+
+[ ] Mobile navigation works
+
+[ ] WhatsApp CTA works with verified number or clearly marked placeholder
+
+[ ] Phone CTA works with verified number or placeholder
+
+[ ] Google Maps directions work
+
+[ ] Contact form validates correctly
+
+[ ] No fake business information
+
+[ ] No fake reviews
+
+[ ] SEO metadata implemented
+
+[ ] JSON-LD implemented
+
+[ ] robots.txt implemented
+
+[ ] sitemap.xml implemented
+
+[ ] manifest implemented
+
+[ ] favicon implemented
+
+[ ] Open Graph implemented
+
+[ ] Accessibility reviewed
+
+[ ] Performance optimized
+
+[ ] Website visually looks like a professional agency project
+
+[ ] No section looks like a generic AI template
+
+---
+
+# FINAL OUTPUT
+
+After actually building and testing the project, give me a concise summary containing:
+
+1. What you built
+2. Main technologies used
+3. Files/components created
+4. Verified business information used
+5. Any placeholders still requiring client information
+6. How to run the project
+7. Production deployment instructions
+8. Final QA status
+
+Do NOT dump thousands of lines of code into the chat after you have already created the files.
+
+The actual implementation belongs in the Replit workspace.
+
+---
+
+# FINAL STANDARD
+
+This website will be shown to the FIRST PAYING CLIENT.
+
+Treat it like a professional agency delivery.
+
+Do not settle for "it works."
+
+Make it:
+
+POLISHED
+RESPONSIVE
+FAST
+ACCESSIBLE
+SEO-FRIENDLY
+CONVERSION-FOCUSED
+TRUSTWORTHY
+PREMIUM
+MAINTAINABLE
+
+REAL BUSINESS VALUE > VISUAL EFFECTS
+
+USER EXPERIENCE > ANIMATION
+
+CLARITY > COMPLEXITY
+
+PERFORMANCE > HEAVY LIBRARIES
+
+AUTHENTICITY > MARKETING HYPE
+
+MOBILE EXPERIENCE > DESKTOP-ONLY DESIGN
+
+Do the work. Build it. Run it. Test it. Fix it. Polish it.
